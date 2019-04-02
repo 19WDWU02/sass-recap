@@ -1,0 +1,62 @@
+body {
+  background-color: red;
+}
+@media only screen and (min-width: 100px) {
+  body {
+    background-color: blue;
+  }
+}
+
+#topNav {
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  background-color: blue;
+}
+#topNav:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+@media only screen and (min-width: 100px) {
+  #topNav {
+    background-color: blue;
+  }
+}
+#topNav ul {
+  list-style: none;
+}
+#topNav ul li {
+  width: 200px;
+}
+@media only screen and (min-width: 100px) {
+  #topNav ul li {
+    background-color: blue;
+  }
+}
+#topNav ul li a {
+  color: red;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  background-color: red;
+}
+#footer ul {
+  list-style: circle;
+}
+@media only screen and (min-width: 100px) {
+  #footer ul {
+    background-color: blue;
+  }
+}
+#footer ul li {
+  width: 500px;
+}
+#footer ul li a {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

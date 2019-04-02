@@ -1,0 +1,65 @@
+// style.scss
+@import 'variables';
+
+@mixin navStyles{
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+}
+
+@mixin clear{
+    &:after{
+        clear: both;
+        content: '';
+        display: block;
+    }
+}
+
+body{
+    background-color: $primaryColour;
+    @media #{$smallQuery} {
+        background-color: $scondaryColour;
+    }
+}
+
+#topNav{
+    @include navStyles;
+    background-color: $scondaryColour;
+    @include clear;
+    @media #{$smallQuery} {
+        background-color: $scondaryColour;
+    }
+    ul{
+        list-style: none;
+        li{
+            width: 200px;
+            @media #{$smallQuery} {
+                background-color: $scondaryColour;
+            }
+            a{
+                color: $primaryColour;
+            }
+        }
+    }
+}
+
+#footer{
+    @include navStyles;
+    background-color: $primaryColour;
+    ul{
+        list-style: circle;
+        @media #{$smallQuery} {
+            background-color: $scondaryColour;
+        }
+        li{
+            width: 500px;
+            a{
+                color: $scondaryColour;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 100px){
+
+}

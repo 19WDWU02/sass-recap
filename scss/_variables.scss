@@ -1,0 +1,5 @@
+$primaryColour: red;
+$scondaryColour: blue;
+$smallScreen: 100px;
+
+$smallQuery: 'only screen and (min-width: #{$smallScreen})';
